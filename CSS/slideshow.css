@@ -1,0 +1,21 @@
+.carousel-inner {
+  min-height: 20em;
+  width:17em;
+}
+
+.wrapSlideShow{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.slideshow
+{
+  background-color: rgba(129, 102, 66, 0.616);
+
+}
+.title-slideshow{
+  color: wheat;
+  text-align: center;
+  margin-bottom: 50px;
+}

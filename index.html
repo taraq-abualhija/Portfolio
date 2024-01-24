@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/randomQuote.css" />
+    <link rel="stylesheet" href="CSS/slideshow.css">
+    <script
+    defer
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"
+  ></script>
+
+    <script defer src="JavaScript/colorChange.js"></script>
+    <!-- <script defer src="JavaScript/logoChange.js"></script> -->
+    <script defer src="JavaScript/randomQuote.js"></script>
+    <script defer src="JavaScript/oclock.js"></script>
+
+    <title>Tareq Abu AL-Hijaa</title>
+  </head>
+  <body>  
+    <header id="header">
+      <div class="parentoclock">
+        <span id="MyClockDisplay" class="clock" onload="showTime()"></span>
+        <span id="logoTime" class="logo">Tareq</span>
+      </div>
+      <nav class="navigation">
+        <div class="navMenu">
+          <a href="index.html">HOME</a>
+          <a class="cv" href="cv.html">CV</a>
+          <a href="#projects">PROJECTS</a>
+          <a href="#contact">CONTACT</a>
+        </div>
+        <div class="navIcon">
+          <a href="https://github.com/taraq-abualhija" target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/tareq-abualhija-0a7058288/"
+            target="_blank"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+          <a href="https://www.instagram.com/tareq_abualhija/ " target="_blank"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+        </div>
+      <div class="divchangeclr">
+          <li id="changeclr">Change color
+            <ul id="hiddenul" style="display: none; list-style: none;" >
+              <li class="gtheme" id="goldtheme">Default</li>
+              <li class="ltheme" id="lighttheme">Light Theme</li>
+              <li class="dtheme" id="darktheme">Dark Theme</li>
+              <li class="btheme" id="bluetheme">Blue Theme</li>
+            </ul>
+          </li>
+          <i id="clrtheme" class="fa-solid fa-palette"></i>
+        
+      </div>
+      </nav>
+    </header>
+
+    
+    <section class="main">
+      <div>
+        <h2>
+          Hello, I'm Tareq Abu Al-Haijaa,<br>
+          <span>Software Engineer</span>
+        </h2>
+      </div>
+    </section>
+    <!-- <section class="slideshow" id="slideshow">
+      <h2 class="title-slideshow">Let's work together</h2>
+    <div class="wrapSlideShow">
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" style="display: flex; 
+        justify-content: center; background-color: darkslategrey; margin-left: auto; margin-right: auto;" >
+          <div class="carousel-inner" style=" min-height: 27em; width:20em;">
+            <div class="carousel-item active">
+              <img src="imgs/6.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img   src="imgs/1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="imgs/oldmoney.JPG" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="imgs/airforce.jpg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" style="display: flex; 
+        justify-content: center; background-color: darkslategray; margin-left: auto; margin-right: auto;" >
+          <div class="carousel-inner" style="  min-height: 27em; width:20em;">
+            <div class="carousel-item active">
+              <img src="imgs/6.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img   src="imgs/1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="imgs/oldmoney.JPG" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="imgs/airforce.jpg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button></div>
+
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" style="display: flex; 
+        justify-content: center; margin-left: auto; margin-right: auto;" >
+          <div class="carousel-inner" style=" min-height: 27em; width:20em;">
+            <div class="carousel-item active">
+              <img src="imgs/6.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img   src="imgs/1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="imgs/oldmoney.JPG" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="imgs/airforce.jpg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button></div>
+  
+    </div>
+    </section> -->
+    <section class="quotes" id="quotes">
+      <button id="btnchangequotes">Change Quotes</button>
+      <h2 class="title">Quotes</h2>
+      <div id="containeriframe">
+        <blockquote id="qsidekick" class="sidekick">
+          The function of good software is to make the complex appear to be simple
+          <br>
+          <cite>Tareq Abu Al-Haijaa</cite>
+       </blockquote>
+      </div>
+
+    </section>
+    <section class="services" id="services">
+      <button id="changeclrcards">Change color cards</button>
+      <h2 class="title">Services</h2>
+  
+      <div class="cards">
+        <div class="card">
+          <div class="iconCard"><i class="fa-solid fa-pen-to-square"></i></div>
+          <div class="info">
+            <h3>Script Writing</h3>
+            <p>Research and write scripts for different
+              topics that can then be directly recorded dor video
+              production
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="iconCard"><i class="fa-solid fa-video"></i></div>
+          <div class="info">
+            <h3>Video Production</h3>
+            <p>Record and shoot videos taking into consideration
+              proper settings, followed by production & post
+              -production work
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="iconCard"><i class="fa-solid fa-graduation-cap"></i></div>
+          <div class="info">
+            <h3>Curriculum Development</h3>
+            <p>Develop complete curriculums for various technical
+                topics to produce digital transformative courses
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="projects" id="projects">
+      <h2>Projects</h2>
+      <div class="cardsproj">
+        <div class="content">
+          <div class="cardproj">
+            <img src="imgs/airforce.jpg" alt="" class="imgcard">
+            <img src="imgs/4.jpg" alt="" class="topimg">
+          </div>
+          <div class="cardinfo">Air force style</div>
+        </div class="content">
+    
+        <div class="content">
+          <div class="cardproj">
+            <img src="imgs/1.jpg" alt="" class="imgcard">
+          </div>
+          <div class="cardinfo">Date Night style</div>
+        </div class="content">
+    
+        
+        <div class="content">
+          <div class="cardproj">
+            <img src="imgs/4.jpg" alt="" class="imgcard">
+          </div>
+          <div class="cardinfo">Car Racing style</div>
+        </div class="content">
+        <div class="content">
+          <div class="cardproj">
+            <img src="imgs/6.JPG" alt="" class="imgcard">
+          </div>
+          <div class="cardinfo">Old Money style</div>
+        </div class="content">
+        <div class="content">
+          <div class="cardproj">
+            <img src="imgs/linen.JPG" alt="" class="imgcard">
+          </div>
+          <div class="cardinfo">Linen Shirt style</div>
+        </div class="content">
+        <div class="content">
+          <div class="cardproj">
+            <img src="imgs/oldmoney.JPG" alt="" class="imgcard">
+          </div>
+          <div class="cardinfo">Old Money style</div>
+        </div class="content">
+      </div>
+    </section>
+    <section class="contact" id="contact">
+      <h2 class="title">Let's work together</h2>
+      <div class="cards">
+        <div class="card">
+          <div class="iconCard"><i class="fa-solid fa-phone"></i></div>
+          <div class="info">
+            <h3>Phone</h3>
+            <p class="tel-contact">+962790920290
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="iconCard"><i class="fa-solid fa-envelope"></i></div>
+          <div class="info">
+            <h3>Email</h3>
+            <p>Business@tareq.com
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <p class="title-footer">Copyright @<span>Tareq Abu Al-Haijaa</span></p>
+      <div class="navIcon">
+        <a href="https://github.com/taraq-abualhija" target="_blank"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/tareq-abualhija-0a7058288/"
+          target="_blank"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+        <a href="https://www.instagram.com/tareq_abualhija/ " target="_blank"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+      </div>
+    </footer>
+  </body>
+</html>

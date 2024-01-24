@@ -1,0 +1,312 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Satisfy&display=swap");
+
+@keyframes mymove {
+  0%   {transform: translate(0, 0);}
+  100% {transform: translate(0, 0);}
+} 
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+header {
+  background-color: darkslategray;
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  align-items: center;
+  transition: all 1s;
+}
+.parentoclock .clock {
+  color: rgb(212, 160, 92);
+  font-size: 17px;
+  font-family: Orbitron;
+  letter-spacing: 4px;
+  /* border: 3px solid red; */
+}
+.parentoclock
+{
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 1.2em;
+  color: rgb(212, 160, 92);
+  padding-left: 60px;
+  
+}
+.logo:hover{
+  color: blanchedalmond;
+}
+.divchangeclr{
+  display: flex;
+  /* border: 3px solid red; */
+  align-items: center ;
+
+}
+#clrtheme{
+  color: rgb(212, 160, 92);
+  cursor: pointer;
+}
+#changeclr{
+  position: relative;
+  display: flex;
+  align-items: center ;
+  box-shadow: 0 5px 25px 0 rgb(0 0 0 / 60%);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  padding: 3px 5px;
+  min-width: 100px;
+  font-weight: 600;
+  font-size: 0.9em;
+  color: rgb(212, 160, 92);
+}
+
+
+#hiddenul{
+    position: absolute;
+    box-shadow: 0 5px 25px 0 rgb(0 0 0 / 60%);
+    padding:6px;
+    border-radius: 0.5rem;
+    background-color: #fff;
+    cursor: pointer;
+    line-height: 25px;
+    text-align: center;
+    min-width: 100px;
+    color: darkslategrey;
+    margin-top: 140px;
+}
+#hiddenul li:hover{
+  border-bottom: 2px solid rgb(212, 160, 92);
+}
+.fa-palette{  
+  margin-left: 10px;
+  font-size: 1.2em;
+}
+
+.navIcon{
+padding: 0 30px;
+font-size: 1.4em;
+}
+.navigation {
+  display: flex;
+  /* justify-content: last baseline; */
+}
+.navigation .navMenu{
+  display: flex;
+  align-items: center;
+}
+.navigation a{
+  color: rgb(212, 160, 92);
+  text-decoration: none;
+  padding-left: 20px;
+  font-weight: 600;
+  font-size: 0.9em;
+}
+.navigation a:hover ,.logoAndCV .cv:hover{
+  color: blanchedalmond
+}
+section {
+  padding: 100px 70px;
+}
+@keyframes mymove {
+  0%   {transform: translate(100vw,0);}
+  100% {transform: translate(0, 0);}
+} 
+.main {
+  animation: mymove 3s 1;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url(../imgs/IMG_4584.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right center;
+  /* background-attachment: fixed; */
+}
+.main h2{
+  padding: 15px;
+  color:blanchedalmond;
+  font-size: 1.2em;
+  font-weight: 500;
+  background-color: darkslategray;
+  border-radius: 0 200px;
+  text-indent: 10px;
+  transition: 1s ease;
+  
+}
+.main h2:hover{
+  transform: scale(1.1);
+}
+.main h2 span {
+  font-size: 1.6em;
+  display: inline-block;
+  font-weight: 600;
+  color: rgb(212, 160, 92);
+  text-indent: 33px;
+  text-transform: uppercase;
+}
+.services {
+  background-color:white ;
+  position: relative;
+}
+.title {
+  display: flex;
+  justify-content: center;
+  color: rgb(212, 160, 92);
+  margin-bottom: 50px;
+  font-weight: 600;
+  font-size: 2.2em;
+}
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.card{
+  padding: 25px;
+  margin: 15px;
+  background-color: white;
+  width: 20.25em;
+  border-radius: 10px;
+  box-shadow: 0 5px 25px rgba(1, 1, 1, 15%);
+  transition: 1s ease;
+}
+.card:hover{
+  transform: scale(1.1);
+}
+#changeclrcards{
+  position: absolute;
+  right: 10px;
+  top: 90px;
+  font-weight: 600;
+  cursor: pointer;
+  background-color: darkslategray;
+  color: rgb(212, 160, 92);
+  border: none;
+  border-radius: 15px;
+  padding: 10px 30px;
+
+}
+.iconCard {
+  font-size: 7em;
+  text-align: center;
+  color: rgb(212, 160, 92);
+}
+.info h3{
+  color: rgb(212, 160, 92);
+  text-align: center;
+  padding-bottom: 15px;
+}
+.info p {
+  text-align: center;
+  font-size: 0.9em;
+  color: darkslategray;
+  font-weight: 500;
+}
+.projects {
+  background-color: darkslategray;
+}
+.projects h2{
+  display: flex;
+  justify-content: center;  
+  color: rgb(212, 160, 92);
+  margin-bottom: 70px;
+  font-weight: 600;
+  font-size: 2.2em;
+}
+.cardsproj {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.cardproj {
+  margin: 30px;
+  padding: 0;
+  min-height: 20em;
+  width:17em;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 5px 5px 25px rgba(1, 1, 1, 15%);
+  transition: 1s ease;
+  overflow: hidden; 
+  position: relative; 
+}
+.cardproj:hover{
+  transform: scale(1.1);
+  
+}
+.imgcard{
+  width: 100%;
+  height: 100%;
+}
+.cardinfo{
+  color: rgb(212, 160, 92);
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  font-size: 1.3em;  
+}
+.topimg{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0;
+  right: 0;
+  top: 0;
+  transition: 1s ease;
+}
+.topimg:hover{
+opacity: 1;
+}
+.contact .iconCard{
+  font-size: 5em;
+}
+
+.contact .info p{
+  font-size: 1.3em;
+}
+
+.footer{
+  display: flex;
+  justify-content: space-between;
+  background-color: darkslategrey;
+  color: rgb(212, 160, 92);
+  padding: 1.5em;
+}
+.footer p{
+  display: flex;
+  align-items: center;
+}
+
+.footer a {
+  color: rgb(212, 160, 92);
+  text-decoration: none;
+  padding-left: 20px;
+  font-weight: 600;
+  font-size: 0.9em;
+}
+.footer span:hover{
+  color: white;
+}
+.footer .navIcon{
+  font-size: 2em;
+}
+
+.footer a:hover{
+  color: white;
+}

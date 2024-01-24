@@ -1,0 +1,46 @@
+.sidekick {
+  animation: mymove 3s 1;
+  background-color: darkslategray;
+  position: relative;
+  padding-left: 1em;
+  border: 3px solid white;
+  border-left: 0.2em solid rgb(212, 160, 92);
+  font-family: 'Roboto', serif;
+  font-size: 2.4em;
+  line-height: 1.5em;
+  font-weight: 100;
+  margin-top: 50px;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 15px;
+  color: white;
+}
+.sidekick:before, .sidekick:after {
+  font-family: Calibri;
+  color: rgb(212, 160, 92);
+  font-size: 34px;
+}
+.sidekick:before {content: '\201e'}
+.sidekick:after {content: '\201c';}
+.sidekick cite {font-size: 50%; text-align:center; top:50%}
+.sidekick cite:before {content: ' \2015 '}
+
+#btnchangequotes{
+  position: absolute;
+  right: 10px;
+  top: 90px;
+  font-weight: 600;
+  cursor: pointer;
+  background-color: white;
+  color: rgb(212, 160, 92);
+  border: none;
+  border-radius: 15px;
+  padding: 10px 30px;
+
+}
+
+.quotes {
+  background-color:darkslategrey;
+  position: relative;
+}
